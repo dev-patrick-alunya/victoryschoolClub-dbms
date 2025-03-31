@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // if (reportsLink) reportsLink.addEventListener('click', loadReports);
 
   function loadTable(tableName) {
-    fetch(`http://localhost:3000/${tableName}`)
+    fetch(`https://victoryschoolclub-dbms.onrender.com/${tableName}`)
       .then(response => {
         if (!response.ok) {
           console.error(`Network response was not ok: ${response.status} ${response.statusText}`);
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function editRecord(tableName, id) {
-    fetch(`http://localhost:3000/${tableName}/${id}`)
+    fetch(`https://victoryschoolclub-dbms.onrender.com/${tableName}/${id}`)
       .then(response => {
         if (!response.ok) {
           throw new Error(`Network response was not ok: ${response.status} ${response.statusText}`);
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Confirm deletion
       if (confirm('Are you sure you want to delete this record?')) {
         // Delete the record
-        fetch(`http://localhost:3000/${tableName}/${id}`, {
+        fetch(`https://victoryschoolclub-dbms.onrender.com/${tableName}/${id}`, {
           method: 'DELETE'
         })
           .then(response => response.json())
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
   function loadSavings() {
-    fetch('http://localhost:3000/club-savings')
+    fetch('https://victoryschoolclub-dbms.onrender.com/club-savings')
       .then(response => response.json())
       .then(data => {
         if (content) {
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function loadFinancialSummary() {
-    fetch('http://localhost:3000/financial-summary')
+    fetch('https://victoryschoolclub-dbms.onrender.com/financial-summary')
       .then(response => response.json())
       .then(data => {
         if (content) {
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function loadActivityReport() {
-    fetch('http://localhost:3000/activity-report')
+    fetch('https://victoryschoolclub-dbms.onrender.com/activity-report')
       .then(response => response.json())
       .then(data => {
         if (content) {
@@ -499,7 +499,7 @@ document.addEventListener('DOMContentLoaded', () => {
       club_revenue_date: document.getElementById('club_revenue_date').value,
       club_revenue_amount: document.getElementById('club_revenue_amount').value
     };
-    fetch('http://localhost:3000/clubs', {
+    fetch('https://victoryschoolclub-dbms.onrender.com/clubs', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -523,7 +523,7 @@ document.addEventListener('DOMContentLoaded', () => {
       patron_name: document.getElementById('patron_name').value,
       patron_role: document.getElementById('patron_role').value
     };
-    fetch('http://localhost:3000/patrons', {
+    fetch('https://victoryschoolclub-dbms.onrender.com/patrons', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -549,7 +549,7 @@ document.addEventListener('DOMContentLoaded', () => {
       member_club: document.getElementById('member_club').value,
       member_role: document.getElementById('member_role').value
     };
-    fetch('http://localhost:3000/members', {
+    fetch('https://victoryschoolclub-dbms.onrender.com/members', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -574,7 +574,7 @@ document.addEventListener('DOMContentLoaded', () => {
       club_id: document.getElementById('club_id').value,
       activity_description: document.getElementById('activity_description').value
     };
-    fetch('http://localhost:3000/activities', {
+    fetch('https://victoryschoolclub-dbms.onrender.com/activities', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -599,7 +599,7 @@ document.addEventListener('DOMContentLoaded', () => {
       finance_date: document.getElementById('finance_date').value,
       club_id: document.getElementById('club_id').value
     };
-    fetch('http://localhost:3000/finances', {
+    fetch('https://victoryschoolclub-dbms.onrender.com/finances', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -627,7 +627,7 @@ document.addEventListener('DOMContentLoaded', () => {
       member_role: document.getElementById('new_member_role').value,
       academic_year: document.getElementById('new_member_academic_year').value
     };
-    fetch('http://localhost:3000/new-members', {
+    fetch('https://victoryschoolclub-dbms.onrender.com/new-members', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -655,7 +655,7 @@ document.addEventListener('DOMContentLoaded', () => {
       member_role: document.getElementById('past_member_role').value,
       academic_year: document.getElementById('past_member_academic_year').value
     };
-    fetch('http://localhost:3000/past-members', {
+    fetch('https://victoryschoolclub-dbms.onrender.com/past-members', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
