@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Members Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Past Members Form</h1>
+    <form action="/submit-past-member" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="yearJoined">Year Joined:</label>
+        <input type="number" id="yearJoined" name="yearJoined" required><br><br>
+
+        <label for="yearLeft">Year Left:</label>
+        <input type="number" id="yearLeft" name="yearLeft" required><br><br>
+
+        <label for="role">Role in Club:</label>
+        <input type="text" id="role" name="role" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Custom js file -->
+     <script src="./scripts.js"></script>
+</body>
+</html>

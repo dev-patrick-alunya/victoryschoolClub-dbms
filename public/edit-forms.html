@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Forms</title>
+
+  <!-- Custom Css files -->
+   <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <!-- Club Form -->
+  <form id="clubs-form" style="display:none;">
+    <label for="clubs_club_name">Club Name:</label>
+    <input type="text" id="clubs_club_name" name="club_name">
+    <label for="clubs_club_patron">Club Patron:</label>
+    <input type="text" id="clubs_club_patron" name="club_patron">
+    <label for="clubs_club_revenue_activity">Revenue Activity:</label>
+    <input type="text" id="clubs_club_revenue_activity" name="club_revenue_activity">
+    <label for="clubs_club_revenue_date">Revenue Date:</label>
+    <input type="date" id="clubs_club_revenue_date" name="club_revenue_date">
+    <label for="clubs_club_revenue_amount">Revenue Amount:</label>
+    <input type="number" id="clubs_club_revenue_amount" name="club_revenue_amount">
+    <button type="submit">Save</button>
+  </form>
+
+  <!-- Patron Form -->
+  <form id="patrons-form" style="display:none;">
+    <label for="patrons_patron_name">Patron Name:</label>
+    <input type="text" id="patrons_patron_name" name="patron_name">
+    <label for="patrons_patron_role">Patron Role:</label>
+    <input type="text" id="patrons_patron_role" name="patron_role">
+    <button type="submit">Save</button>
+  </form>
+
+  <!-- Member Form -->
+  <form id="members-form" style="display:none;">
+    <label for="members_member_name">Member Name:</label>
+    <input type="text" id="members_member_name" name="member_name">
+    <label for="members_member_class">Member Class:</label>
+    <input type="text" id="members_member_class" name="member_class">
+    <label for="members_member_admission_number">Admission Number:</label>
+    <input type="text" id="members_member_admission_number" name="member_admission_number">
+    <label for="members_member_club">Member Club:</label>
+    <input type="text" id="members_member_club" name="member_club">
+    <label for="members_member_role">Member Role:</label>
+    <input type="text" id="members_member_role" name="member_role">
+    <button type="submit">Save</button>
+  </form>
+
+  <!-- Activity Form -->
+  <form id="activities-form" style="display:none;">
+    <label for="activities_activity_name">Activity Name:</label>
+    <input type="text" id="activities_activity_name" name="activity_name">
+    <label for="activities_activity_date">Activity Date:</label>
+    <input type="date" id="activities_activity_date" name="activity_date">
+    <label for="activities_club_id">Club ID:</label>
+    <input type="text" id="activities_club_id" name="club_id">
+    <label for="activities_activity_description">Activity Description:</label>
+    <input type="text" id="activities_activity_description" name="activity_description">
+    <button type="submit">Save</button>
+  </form>
+
+  <!-- Finance Form -->
+  <form id="finances-form" style="display:none;">
+    <label for="finances_finance_description">Finance Description:</label>
+    <input type="text" id="finances_finance_description" name="finance_description">
+    <label for="finances_finance_amount">Finance Amount:</label>
+    <input type="number" id="finances_finance_amount" name="finance_amount">
+    <label for="finances_finance_date">Finance Date:</label>
+    <input type="date" id="finances_finance_date" name="finance_date">
+    <label for="finances_club_id">Club ID:</label>
+    <input type="text" id="finances_club_id" name="club_id">
+    <button type="submit">Save</button>
+  </form>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>

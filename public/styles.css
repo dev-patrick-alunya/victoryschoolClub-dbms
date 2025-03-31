@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #333;
+  padding-top: 20px;
+  overflow-y: scroll;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  background-color: maroon;
+  color: white;
+  padding: 13px 19px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  background: #575757;
+}
+
+#content {
+  margin-left: 220px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .reports table{
+  overflow-x: scroll;
+} */
+
+form {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  background-color: maroon;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button {
+  background-color: maroon;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form label {
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+}
+
